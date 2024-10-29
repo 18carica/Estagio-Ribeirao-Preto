@@ -1,0 +1,65 @@
+4) Descubra a lógica e complete o próximo elemento:
+a) 1, 3, 5, 7, ___
+b) 2, 4, 8, 16, 32, 64, ____
+c) 0, 1, 4, 9, 16, 25, 36, ____
+d) 4, 16, 36, 64, ____
+e) 1, 1, 2, 3, 5, 8, ____
+f) 2,10, 12, 16, 17, 18, 19, ____
+
+a) 1, 3, 5, 7, ___
+Lógica: Essa sequência é composta por números ímpares que aumentam de 2 em 2.
+Próximo elemento: 9
+
+b) 2, 4, 8, 16, 32, 64, ____
+Lógica: Essa sequência é uma potência de 2: 
+Próximo elemento: 128 (ou 2^7)
+
+c) 0, 1, 4, 9, 16, 25, 36, ____
+Lógica: Essa sequência é composta pelos quadrados dos números inteiros: 
+Próximo elemento: 49 (ou 7^2)
+
+d) 4, 16, 36, 64, ____
+Lógica: Essa sequência é composta pelos quadrados dos números pares: 
+Próximo elemento: 100 (ou 10^2)
+
+e) 1, 1, 2, 3, 5, 8, ____
+Lógica: Essa é a sequência de Fibonacci, onde cada número é a soma dos dois anteriores: 
+Próximo elemento: 13 (ou 5 + 8)
+
+f) 2, 10, 12, 16, 17, 18, 19, ____
+Lógica: A sequência alterna entre adicionar números.
+
+Adiciona 8 (2 + 8 = 10)
+Adiciona 2 (10 + 2 = 12)
+Adiciona 4 (12 + 4 = 16)
+Adiciona 1 (16 + 1 = 17)
+Adiciona 1 (17 + 1 = 18)
+Adiciona 1 (18 + 1 = 19)
+
+O padrão de adição parece ser: 8, 2, 4, 1, 1, 1. Após o último 1, a próxima adição seria 2, resultando em:
+
+Próximo elemento: 21 (ou 19 + 2)
+
+5) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?  
+
+Passo a Passo
+Primeira Ação (ligar os interruptores):
+
+Ligue o primeiro interruptor (vamos chamá-lo de Interruptor A) e deixe-o ligado por cerca de 10 a 15 minutos.
+Após esse tempo, desligue o Interruptor A.
+Em seguida, ligue o segundo interruptor (vamos chamá-lo de Interruptor B).
+Deixe o terceiro interruptor (chamado de Interruptor C) desligado durante todo o processo.
+Primeira Visita às Salas:
+
+Agora, vá até as salas onde as lâmpadas estão.
+Observe o estado das lâmpadas:
+Se uma lâmpada estiver acesa, ela é controlada pelo Interruptor B (que você deixou ligado).
+Se uma lâmpada estiver apagada, toque nela:
+Se a lâmpada estiver quente, ela é controlada pelo Interruptor A (porque estava ligada por um tempo antes de ser desligada).
+Se a lâmpada estiver fria, ela é controlada pelo Interruptor C (que permaneceu desligado durante todo o tempo).
+Conclusão
+Com essa estratégia, você poderá identificar qual interruptor controla cada lâmpada usando apenas duas idas às salas. Você saberá qual lâmpada corresponde a cada interruptor:
+
+Lâmpada acesa: corresponde ao Interruptor B.
+Lâmpada apagada e quente: corresponde ao Interruptor A.
+Lâmpada apagada e fria: corresponde ao Interruptor C.
